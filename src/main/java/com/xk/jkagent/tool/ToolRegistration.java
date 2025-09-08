@@ -19,10 +19,18 @@ public class ToolRegistration {
     public ToolCallback[] allTools(){
         FileOperationTool fileOperationTool = new FileOperationTool();
         WebSearchTool webSearchTool = new WebSearchTool(apiKey);
+        WebScrapTool webScrapTool = new WebScrapTool();
+        TerminalOperationTool terminalOperationTool = new TerminalOperationTool();
+        ResourceDownloadTool resourceDownloadTool = new ResourceDownloadTool();
+        PDFGenerationTool pdfGenerationTool = new PDFGenerationTool();
         TerminateTool terminateTool = new TerminateTool();
         return ToolCallbacks.from(
                 fileOperationTool,
                 webSearchTool,
+                webScrapTool,
+                terminalOperationTool,
+                resourceDownloadTool,
+                pdfGenerationTool,
                 terminateTool
         );
     }

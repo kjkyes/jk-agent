@@ -50,11 +50,25 @@ class LoveAppTest {
 
     @Test
     void doChatWithTools() {
+//        // 测试文件操作：保存用户档案
+//        testMessage("保存我的恋爱档案为文件");
+//
+//        // 测试pdf生成工具
+//        testMessage("生成我的恋爱档案为pdf文件，要求包含的内容有：行程安排，餐厅选择，礼物选择");
+//
+//        // 测试资源下载工具
+//        testMessage("我想在 'https://baidu.com' 找两张星空背景的图片做手机壁纸,并以'星空'为名保存在文件中 ");
+//
+//        // 测试终端操作工具
+//        testMessage("帮我用 'ls' 命令打开file文件夹，看看该文件夹下有哪些文件");
+
+        // 测试网页抓取工具
+        testMessage("最近在研究AI开发的对话记忆功能，帮我找下 'https://java2ai.com/docs/1.0.0-M6.1/tutorials/memory/" +
+                "?spm=5176.29160081.0.0.2856aa5c3aAf87' 上的相关资料'");
+
         // 测试联网搜索问题的答案
         testMessage("周末想带女朋友去上海约会，推荐几个适合情侣的小众打卡地？");
 
-        // 测试文件操作：保存用户档案
-        testMessage("保存我的恋爱档案为文件");
     }
 
     private void testMessage(String message) {

@@ -9,6 +9,7 @@ spring:
       chat:
         options:
           model: qwen-plus
+          max-token: 500
     ollama:
       base-url: http://localhost:11434
       chat:

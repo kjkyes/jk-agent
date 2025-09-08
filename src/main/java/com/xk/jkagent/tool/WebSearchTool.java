@@ -12,6 +12,9 @@ import java.util.List;
 import java.util.Map;
 import java.util.stream.Collectors;
 
+/**
+ * 网页搜索工具类（联网搜索关键词相关的内容）
+ */
 public class WebSearchTool {
 
     // SearchAPI 的搜索接口地址
