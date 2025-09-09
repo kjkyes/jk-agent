@@ -100,6 +100,11 @@ public class AiController {
         return sseEmitter;
     }
 
+    /**
+     * 流式调用 XKManus 超级智能体
+     * @param userPrompt
+     * @return
+     */
     @GetMapping(value = "/manus/chat")
     public SseEmitter doChatWithManus(String userPrompt) {
         XKManus manus = new XKManus(allTools, dashscopeChatModel);
