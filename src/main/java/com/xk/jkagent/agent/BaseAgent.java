@@ -106,12 +106,12 @@ public abstract class BaseAgent {
             try{
                 // 基础校验
                 if(agentState != AgentState.IDLE) {
-                    sseEmitter.send("Connot run agent in state: " + agentState);
+                    sseEmitter.send("Cannot run agent in state: " + agentState);
                     sseEmitter.complete();
                     return;
                 }
                 if(StrUtil.isBlank(userPrompt)) {
-                    sseEmitter.send("Connot run agent in state: " + agentState);
+                    sseEmitter.send("Cannot run agent with none prompt");
                     sseEmitter.complete();
                     return;
                 }
